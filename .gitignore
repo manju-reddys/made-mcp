@@ -26,3 +26,4 @@ test-results/
 !.eslintrc.json
 !.dockerignore
 !.vscode/
+!.gitmodules

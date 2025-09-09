@@ -1,0 +1,3 @@
+[submodule "made-repo"]
+	path = made-repo
+	url = https://github.com/Mastercard/made.git
