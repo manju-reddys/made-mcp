@@ -1,0 +1,31 @@
+services:
+  made-mcp-server:
+    container_name: made-mcp-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # REQUIRED: Specify the MADE design system version to use
+        # Available versions: https://github.com/Mastercard/made/tags
+        # Examples: v3.0.0, v2.3.0, main, develop
+        MADE_VERSION: ${MADE_VERSION:-main}
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MADE_REPO_PATH=/app/made-repo
+      - DATA_DIR=/app/data
+    volumes:
+      # Optional: Mount data directory for persistence
+      - made_data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  made_data:
+    driver: local

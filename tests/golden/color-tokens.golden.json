@@ -1,0 +1,14 @@
+{
+  "tokens": [
+    {
+      "name": "--made-color-primary-500",
+      "value": "#FF5F00",
+      "category": "color",
+      "description": "Primary brand color"
+    }
+  ],
+  "meta": {
+    "totalCount": 1,
+    "filteredCount": 1
+  }
+}

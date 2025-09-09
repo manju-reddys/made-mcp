@@ -1,0 +1,28 @@
+{
+  "version": 1.1,
+  "properties": [
+    {
+      "name": "--made-color-action-background-primary-default",
+      "description": "Primary action background color",
+      "browsers": ["all"]
+    },
+    {
+      "name": "--made-color-action-background-secondary-default", 
+      "description": "Secondary action background color",
+      "browsers": ["all"]
+    },
+    {
+      "name": "--made-space-4-x",
+      "description": "Standard spacing unit (16px)",
+      "browsers": ["all"]
+    },
+    {
+      "name": "--made-border-radius-04",
+      "description": "Standard border radius (8px)",
+      "browsers": ["all"]
+    }
+  ],
+  "atDirectives": [],
+  "pseudoClasses": [],
+  "pseudoElements": []
+}

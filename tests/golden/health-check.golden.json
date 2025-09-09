@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "message": "1 components, 1 tokens loaded",
+      "name": "indexes_loaded",
+      "status": "pass"
+    },
+    {
+      "name": "data_directory",
+      "status": "pass"
+    },
+    {
+      "message": "Server initialized",
+      "name": "initialization",
+      "status": "pass"
+    }
+  ],
+  "lastSync": "TIMESTAMP_PLACEHOLDER",
+  "status": "healthy",
+  "upstreamVersion": "main",
+  "version": "1.0.0"
+}

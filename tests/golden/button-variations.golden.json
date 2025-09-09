@@ -1,0 +1,42 @@
+[
+  {
+    "props": {
+      "variant": "primary",
+      "size": "sm"
+    },
+    "html": "<button class=\"made-btn made-btn-primary made-btn-sm\" type=\"button\" aria-label=\"Button button\">Button</button>",
+    "notes": [
+      "Applied primary variant"
+    ]
+  },
+  {
+    "props": {
+      "variant": "primary",
+      "size": "lg"
+    },
+    "html": "<button class=\"made-btn made-btn-primary made-btn-lg\" type=\"button\" aria-label=\"Button button\">Button</button>",
+    "notes": [
+      "Applied primary variant"
+    ]
+  },
+  {
+    "props": {
+      "variant": "secondary",
+      "size": "sm"
+    },
+    "html": "<button class=\"made-btn made-btn-secondary made-btn-sm\" type=\"button\" aria-label=\"Button button\">Button</button>",
+    "notes": [
+      "Applied secondary variant"
+    ]
+  },
+  {
+    "props": {
+      "variant": "secondary",
+      "size": "lg"
+    },
+    "html": "<button class=\"made-btn made-btn-secondary made-btn-lg\" type=\"button\" aria-label=\"Button button\">Button</button>",
+    "notes": [
+      "Applied secondary variant"
+    ]
+  }
+]

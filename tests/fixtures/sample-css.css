@@ -1,0 +1,120 @@
+/* Sample MADE CSS Variables for testing */
+:root {
+  /* Color tokens */
+  --made-color-primary-500: #FF5F00;
+  --made-color-primary-600: #E5560C;
+  --made-color-secondary-500: #1A1A1A;
+  --made-color-white: #FFFFFF;
+  --made-color-black: #000000;
+  
+  /* Spacing tokens */
+  --made-spacing-xs: 0.25rem;
+  --made-spacing-sm: 0.5rem;
+  --made-spacing-md: 1rem;
+  --made-spacing-lg: 1.5rem;
+  --made-spacing-xl: 2rem;
+  
+  /* Typography tokens */
+  --made-font-size-xs: 0.75rem;
+  --made-font-size-sm: 0.875rem;
+  --made-font-size-base: 1rem;
+  --made-font-size-lg: 1.125rem;
+  --made-font-size-xl: 1.25rem;
+  --made-font-weight-normal: 400;
+  --made-font-weight-medium: 500;
+  --made-font-weight-bold: 700;
+  
+  /* Border radius tokens */
+  --made-border-radius-sm: 0.125rem;
+  --made-border-radius-md: 0.25rem;
+  --made-border-radius-lg: 0.5rem;
+  
+  /* Shadow tokens */
+  --made-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --made-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --made-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Component styles */
+.made-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--made-spacing-sm) var(--made-spacing-md);
+  font-size: var(--made-font-size-base);
+  font-weight: var(--made-font-weight-medium);
+  border-radius: var(--made-border-radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.made-btn-primary {
+  background-color: var(--made-color-primary-500);
+  color: var(--made-color-white);
+}
+
+.made-btn-primary:hover {
+  background-color: var(--made-color-primary-600);
+}
+
+.made-btn-secondary {
+  background-color: transparent;
+  color: var(--made-color-primary-500);
+  border: 1px solid var(--made-color-primary-500);
+}
+
+.made-btn-sm {
+  padding: calc(var(--made-spacing-xs)) var(--made-spacing-sm);
+  font-size: var(--made-font-size-sm);
+}
+
+.made-btn-lg {
+  padding: var(--made-spacing-md) var(--made-spacing-lg);
+  font-size: var(--made-font-size-lg);
+}
+
+.made-card {
+  background-color: var(--made-color-white);
+  border-radius: var(--made-border-radius-lg);
+  box-shadow: var(--made-shadow-md);
+  overflow: hidden;
+}
+
+.made-card-body {
+  padding: var(--made-spacing-md);
+}
+
+.made-card-title {
+  margin: 0 0 var(--made-spacing-sm) 0;
+  font-size: var(--made-font-size-lg);
+  font-weight: var(--made-font-weight-bold);
+}
+
+.made-alert {
+  padding: var(--made-spacing-md);
+  border-radius: var(--made-border-radius-md);
+  border-left: 4px solid var(--made-color-primary-500);
+}
+
+.made-alert-primary {
+  background-color: rgba(255, 95, 0, 0.1);
+  color: var(--made-color-primary-600);
+}
+
+/* Utility classes */
+.p-1 { padding: var(--made-spacing-xs); }
+.p-2 { padding: var(--made-spacing-sm); }
+.p-3 { padding: var(--made-spacing-md); }
+.p-4 { padding: var(--made-spacing-lg); }
+
+.m-1 { margin: var(--made-spacing-xs); }
+.m-2 { margin: var(--made-spacing-sm); }
+.m-3 { margin: var(--made-spacing-md); }
+.m-4 { margin: var(--made-spacing-lg); }
+
+.text-primary { color: var(--made-color-primary-500); }
+.text-secondary { color: var(--made-color-secondary-500); }
+
+.bg-primary { background-color: var(--made-color-primary-500); }
+.bg-white { background-color: var(--made-color-white); }

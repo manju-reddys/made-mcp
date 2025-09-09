@@ -1,0 +1,26 @@
+{
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false
+  },
+  "github.copilot.advanced": {
+    "debug.overrideEngine": "copilot-chat",
+    "debug.testOverrideProxyUrl": "http://localhost:3000",
+    "debug.overrideProxyUrl": "http://localhost:3000"
+  },
+  "files.associations": {
+    "*.made": "html"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.preferences": {
+    "bem.elementSeparator": "__",
+    "bem.modifierSeparator": "--"
+  },
+  "css.customData": [
+    ".vscode/made-css-data.json"
+  ]
+}

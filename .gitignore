@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.*
+.idea/
+
+# Design system cache
+data/made-repo/
+data/indexes/
+data/cache/
+
+# Test artifacts
+coverage/
+.nyc_output/
+test-results/
+
+# Build artifacts
+*.tsbuildinfo
+!.gitignore
+!.eslintrc.json
+!.dockerignore
+!.vscode/

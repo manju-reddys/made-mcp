@@ -1,0 +1,44 @@
+{
+  "name": "made-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for Mastercard MADE design system integration with GitHub Copilot",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && chmod +x dist/scripts/*.js",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "sync": "node dist/scripts/sync.js",
+    "build-index": "node dist/scripts/build-index.js",
+    "build-indexes": "node dist/scripts/build-indexes.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "design-system", "made", "mastercard", "copilot", "ui-components"],
+  "author": "MADE MCP Server Team",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.17.5",
+    "cheerio": "1.1.2",
+    "@adobe/css-tools": "4.4.4",
+    "fs-extra": "11.3.1",
+    "glob": "11.0.3",
+    "simple-git": "3.28.0",
+    "zod": "4.1.5"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "24.3.1",
+    "@typescript-eslint/eslint-plugin": "8.43.0",
+    "@typescript-eslint/parser": "8.43.0",
+    "eslint": "9.35.0",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "vitest": "3.2.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
