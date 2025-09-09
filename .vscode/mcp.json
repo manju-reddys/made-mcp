@@ -1,16 +1,9 @@
 {
   "servers": {
-    "made-design-system": {
+    "made": {
+      "type": "stdio",
       "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "made-mcp-made-mcp-server:latest"
-      ],
-      "env": {
-        "NODE_ENV": "production"
-      }
+      "args": ["run", "--rm", "-i", "made-mcp-server:latest"]
     }
   }
 }
